@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- HEAD: page title, fonts and the stylesheet. Change <title> to rename the browser tab -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Fyna – Money without borders</title>
+    <!-- Fonts from Google Fonts (needs internet). Bricolage Grotesque = headings, Instrument Sans = text -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tiny script that enables the scroll animations when JavaScript is on -->
+    <script src="js/init.js"></script>
+    <!-- All the styling lives in this one file -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER: logo, menu links (edit the <a> items) and the "Get the app" button -->
+    <header id="hd">
+      <div class="w">
+        <a class="logo" href="#top"
+          ><svg viewBox="0 0 30 22">
+            <circle cx="11" cy="11" r="9.5" fill="currentColor" />
+            <circle
+              cx="19"
+              cy="11"
+              r="9.5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            /></svg
+          >Fyna</a
+        >
+        <nav class="nl">
+          <a href="#features">Features</a><a href="#how">How it works</a
+          ><a href="#receive">Get paid</a><a href="#exchange">Exchange</a
+          ><a href="#fees">Fees</a><a href="#faq">FAQ</a>
+        </nav>
+        <a class="btn" href="#get">Get the app</a>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="top">
+      <!-- HERO: red section. The headline is the <h1>. Edit the text and the two buttons here -->
+      <section class="hero" style="padding-bottom: 0">
+        <div class="w">
+          <span class="kick"
+            ><i></i>Multi-currency wallet · NGN USD GBP EUR</span
+          >
+          <h1>
+            <span class="ln"><span>Money without</span></span
+            ><span class="ln"><span class="x">borders.</span></span>
+          </h1>
+          <div class="hrow">
+            <p>
+              Hold naira, dollars, pounds and euros in one app. Swap at a rate
+              you can see, send in seconds, and get paid from abroad without
+              SWIFT fees.
+            </p>
+            <div>
+              <div class="cta">
+                <a class="btn w1 lg" href="#get">Download the app</a
+                ><a class="btn o1 lg" href="#how">See how it works</a>
+              </div>
+              <div class="micro">
+                Free to open · Free bank-transfer deposits · 0.5% swaps
+              </div>
+            </div>
+          </div>
+          <div class="fan" id="fan">
+            <div class="badge">
+              <svg viewBox="0 0 120 120">
+                <defs>
+                  <path
+                    id="cp"
+                    d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"
+                  />
+                </defs>
+                <circle cx="60" cy="60" r="58" fill="#0e1220" />
+                <text
+                  font-size="11.5"
+                  font-weight="700"
+                  letter-spacing="2.6"
+                  fill="#fff"
+                >
+                  <textPath href="#cp">
+                    NO SWIFT FEES ✦ NO HIDDEN FEES ✦ NO BORDERS ✦
+                  </textPath>
+                </text></svg
+              ><b>↓</b>
+            </div>
+            <div class="coin" style="left: 3%; top: 30px">₦</div>
+            <div
+              class="coin l c3"
+              style="right: 26%; top: 0; animation-delay: -2s"
+            >
+              $
+            </div>
+            <div
+              class="coin l"
+              style="
+                left: 14%;
+                top: 260px;
+                animation-delay: -4s;
+                width: 52px;
+                height: 52px;
+              "
+            >
+              £
+            </div>
+            <div
+              class="coin"
+              style="
+                right: 12%;
+                top: 330px;
+                animation-delay: -5s;
+                width: 56px;
+                height: 56px;
+              "
+            >
+              €
+            </div>
+            <div class="ph p1">
+              <i class="isl"></i
+              ><img
+                src="assets/img/save.webp"
+                data-i="save"
+                alt="Savings goals screen"
+              />
+            </div>
+            <div class="ph p2">
+              <i class="isl"></i
+              ><img
+                src="assets/img/xform.webp"
+                data-i="xform"
+                alt="Exchange screen"
+              />
+            </div>
+            <div class="ph p0">
+              <i class="isl"></i
+              ><img
+                src="assets/img/home.webp"
+                data-i="home"
+                alt="Home screen with wallets"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARQUEE: the words come from SETTINGS.marquee in js/script.js -->
+      <div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+      <div class="w" style="margin-top: 72px">
+        <div class="b6st rv">
+          <div><b>4</b><span>currencies in one wallet</span></div>
+          <div><b>3</b><span>steps to sign up</span></div>
+          <div>
+            <b>0.5<em>%</em></b
+            ><span>flat swap fee, shown first</span>
+          </div>
+          <div><b>0</b><span>SWIFT fees when you receive</span></div>
+        </div>
+      </div>
+
+      <!-- FEATURES: bento grid. Each tile is a <div class="b6 ...">. Copy one tile to add another -->
+      <section id="features">
+        <div class="w">
+          <div class="eb">Features</div>
+          <h2 class="rv">Everything your money needs, <em>in one app.</em></h2>
+          <p class="lead rv">
+            Tap, toggle and slide. Every tile below works the way the app does.
+          </p>
+          <div class="b6g">
+            <div class="b6 s2 rv">
+              <div class="b6r">
+                <div class="b6l">
+                  <span class="b6n">01</span>
+                  <h3>Every currency, one wallet</h3>
+                  <p>
+                    Hold naira, dollars, pounds and euros side by side. Tap a
+                    wallet to switch.
+                  </p>
+                  <div class="b6cur" id="b6cur"></div>
+                </div>
+                <div class="b6crop">
+                  <div class="ph">
+                    <i class="isl"></i
+                    ><img
+                      src="assets/img/home.webp"
+                      data-i="home"
+                      alt="Home screen with wallets"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="b6 s2 rv">
+              <span class="b6n">02</span>
+              <h3>Virtual cards, your rules</h3>
+              <p>
+                Freeze the moment something feels off, and cap what a card can
+                spend each month.
+              </p>
+              <div class="b6v">
+                <div class="b6card" id="b6vc">
+                  <div><span class="lg">Fyna</span><span>VISA</span></div>
+                  <b>•••• 4821</b>
+                  <div><span>SMART A.</span><span>09/29</span></div>
+                </div>
+                <div class="b6ctl">
+                  <div class="b6row">
+                    <span
+                      >Freeze card<small id="b6fzt">Card is active</small></span
+                    ><button
+                      class="b6tg"
+                      id="b6fz"
+                      aria-label="Freeze card"
+                    ></button>
+                  </div>
+                  <div>
+                    <div class="b6row">
+                      <span>Monthly limit</span><b id="b6lv">₦500,000</b>
+                    </div>
+                    <input
+                      type="range"
+                      id="b6lr"
+                      min="50000"
+                      max="2000000"
+                      step="50000"
+                      value="500000"
+                      aria-label="Monthly limit"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="b6 s2 m navy rv">
+              <span class="b6n">03</span>
+              <h3>Fair exchange, no surprises</h3>
+              <p>
+                The rate, the 0.5% fee and what you receive, before you confirm.
+              </p>
+              <div class="b6x">
+                <div><small>You send</small><b>$88.00</b></div>
+                <i>→</i>
+                <div><small>You receive</small><b>₦136,594</b></div>
+              </div>
+              <div class="b6xm">
+                <span>Rate <b>1 USD = ₦1,560</b></span
+                ><span>Fee <b>$0.44</b></span
+                ><span>ETA <b>Instant</b></span>
+              </div>
+              <a class="b6a" href="#exchange">Try it live →</a>
+            </div>
+
+            <div class="b6 s2 m rv">
+              <span class="b6n">04</span>
+              <h3>Savings goals</h3>
+              <p>One card per goal. Watch each one fill up.</p>
+              <div class="b6sv">
+                <div class="b6sg" style="--a: #574bea; --b: #2f2780">
+                  <span class="ic">💻</span>
+                  <h4>Macbook Pro</h4>
+                  <em>72%</em>
+                  <div class="bb"><i style="width: 72%"></i></div>
+                </div>
+                <div class="b6sg" style="--a: #16af5b; --b: #08522b">
+                  <span class="ic">🛡️</span>
+                  <h4>Emergency Fund</h4>
+                  <em>56%</em>
+                  <div class="bb"><i style="width: 56%"></i></div>
+                </div>
+                <div class="b6sg" style="--a: #e04060; --b: #8a2840">
+                  <span class="ic">✈️</span>
+                  <h4>Vacation</h4>
+                  <em>23%</em>
+                  <div class="bb"><i style="width: 23%"></i></div>
+                </div>
+              </div>
+              <a class="b6a" href="#goals">Play with it →</a>
+            </div>
+
+            <div class="b6 t rv">
+              <span class="b6n">05</span>
+              <h3>Instant transfers</h3>
+              <p>To anyone on the app, free. Or to any bank account.</p>
+              <div class="b6c2">
+                <div class="ph">
+                  <i class="isl"></i
+                  ><img
+                    src="assets/img/sdone.webp"
+                    data-i="sdone"
+                    alt="Money sent screen"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="b6 t rv">
+              <span class="b6n">06</span>
+              <h3>Locked down by default</h3>
+              <p>You approve every move yourself.</p>
+              <div class="b6ls">
+                <div><i>✓</i>Verified with a one-time code</div>
+                <div><i>✓</i>4-digit PIN to approve</div>
+                <div><i>✓</i>Review before you send</div>
+                <div><i>✓</i>Instant card freeze</div>
+              </div>
+            </div>
+
+            <div class="b6 s2 t red rv">
+              <span class="b6n">07</span>
+              <h3>Open an account in 3 steps</h3>
+              <p>
+                Your number. The code we text you. A 4-digit PIN. That’s it.
+              </p>
+              <div class="b6fan">
+                <div class="ph">
+                  <i class="isl"></i
+                  ><img
+                    src="assets/img/num.webp"
+                    data-i="num"
+                    alt="Phone number screen"
+                  />
+                </div>
+                <div class="ph">
+                  <i class="isl"></i
+                  ><img
+                    src="assets/img/code.webp"
+                    data-i="code"
+                    alt="Code screen"
+                  />
+                </div>
+                <div class="ph">
+                  <i class="isl"></i
+                  ><img
+                    src="assets/img/pin.webp"
+                    data-i="pin"
+                    alt="PIN screen"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS: each <div class="ch"> is one chapter. Its phone screens are set in SETTINGS.storyChapters (js/script.js) -->
+      <section id="how">
+        <div class="w">
+          <div class="eb">How it works</div>
+          <h2>From download to <em>first transfer</em> in minutes.</h2>
+          <div class="story">
+            <div id="chs">
+              <div class="ch">
+                <div class="n">01</div>
+                <h3>Sign up with just a number.</h3>
+                <p>
+                  Verify your phone, enter the code we text you, set a 4-digit
+                  PIN. That’s the whole sign-up.
+                </p>
+                <div class="tags">
+                  <span>Phone or email</span><span>4-digit PIN</span>
+                </div>
+              </div>
+              <div class="ch">
+                <div class="n">02</div>
+                <h3>Fund your wallet.</h3>
+                <p>
+                  Type an amount, pick the currency, choose how to pay. Bank
+                  transfers cost nothing.
+                </p>
+                <div class="tags">
+                  <span>Bank transfer · free</span><span>Card · 2%</span
+                  ><span>Apple Pay · 2%</span>
+                </div>
+              </div>
+              <div class="ch">
+                <div class="n">03</div>
+                <h3>Swap at a rate you can see.</h3>
+                <p>
+                  The rate, the fee and exactly what you’ll receive sit on one
+                  screen before you confirm.
+                </p>
+                <div class="tags">
+                  <span>0.5% fee</span><span>Instant</span>
+                </div>
+              </div>
+              <div class="ch">
+                <div class="n">04</div>
+                <h3>Send in seconds.</h3>
+                <p>
+                  To anyone on the app, instantly and free. Or to any bank
+                  account, converting if needed.
+                </p>
+                <div class="tags">
+                  <span>Same app · free</span><span>Any bank account</span>
+                </div>
+              </div>
+              <div class="ch">
+                <div class="n">05</div>
+                <h3>Save for what’s next.</h3>
+                <p>
+                  Create goals for the laptop, the rainy day, the holiday. Watch
+                  every one fill up.
+                </p>
+                <div class="tags">
+                  <span>Multiple goals</span><span>Progress at a glance</span>
+                </div>
+              </div>
+            </div>
+            <div class="stage" id="stage">
+              <div class="blob"></div>
+              <div class="ph">
+                <i class="isl"></i>
+                <div class="scr" id="scr"></div>
+              </div>
+              <div class="cap">
+                <b id="capn">01</b><span id="capl"></span>
+                <div class="dots" id="dots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GET PAID: the tabs and the slip are built by JS from SETTINGS.accounts -->
+      <div class="rc" id="receive">
+        <div class="w rg">
+          <div>
+            <div class="eb">Get paid</div>
+            <h2>Your own account, <em>wherever</em> they pay from.</h2>
+            <p class="lead">
+              Share local account details for each currency. Money lands in the
+              matching wallet, with no conversion unless you choose to exchange
+              it.
+            </p>
+            <div class="tabs" id="tabs"></div>
+            <div class="slip" id="slip"></div>
+          </div>
+          <div class="rp">
+            <div class="ph">
+              <i class="isl"></i
+              ><img
+                src="assets/img/recv.webp"
+                data-i="recv"
+                alt="Receive money screen"
+              />
+            </div>
+            <div class="tag">0 SWIFT fees</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXCHANGE: live converter. Rates and fee are in SETTINGS (js/script.js) -->
+      <div class="ex" id="exchange">
+        <div class="w">
+          <div class="eb">Exchange</div>
+          <h2>Know the number <em>before</em> you tap.</h2>
+          <p class="lead">
+            Try it. These are the same numbers the app shows you on its confirm
+            screen. Sample rates.
+          </p>
+          <div class="cv">
+            <div class="sd">
+              <label>From</label>
+              <div class="am">
+                <input
+                  id="xa"
+                  value="88"
+                  inputmode="decimal"
+                  aria-label="Amount"
+                /><select id="xf">
+                  <option>USD</option>
+                  <option>NGN</option>
+                  <option>GBP</option>
+                  <option>EUR</option>
+                </select>
+              </div>
+              <small id="xb"></small>
+            </div>
+            <button class="fp" id="xs" aria-label="Swap currencies">⇅</button>
+            <div class="sd">
+              <label>To</label>
+              <div class="am">
+                <span id="xo">0</span
+                ><select id="xt">
+                  <option>NGN</option>
+                  <option>USD</option>
+                  <option>GBP</option>
+                  <option>EUR</option>
+                </select>
+              </div>
+              <small id="xb2"></small>
+            </div>
+            <dl class="rt">
+              <div>
+                <dt>Exchange rate</dt>
+                <dd id="xr"></dd>
+              </div>
+              <div>
+                <dt>Fee (0.5%)</dt>
+                <dd id="xe"></dd>
+              </div>
+              <div>
+                <dt>ETA</dt>
+                <dd>Instant</dd>
+              </div>
+            </dl>
+            <button class="btn r1" id="xc">Convert ⇅</button>
+            <div class="dn" id="dn">
+              <div>
+                <i>✓</i><b>Conversion complete</b>
+                <p id="dt"></p>
+                <button class="btn r1" id="dd">Done →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAVINGS GOALS: the cards are built by JS from SETTINGS.goals -->
+      <section id="goals">
+        <div class="w gl">
+          <div>
+            <div class="eb">Savings</div>
+            <h2>Dream big. <em>Save small.</em></h2>
+            <p class="lead">
+              Give every goal its own card and top it up whenever you like. Tap
+              the buttons and watch them fill.
+            </p>
+          </div>
+          <div class="gs" id="gs"></div>
+        </div>
+      </section>
+
+      <!-- FEES: the receipt lines are plain HTML. Edit the <div class="r"> rows -->
+      <section id="fees">
+        <div class="w fe">
+          <div>
+            <div class="eb">Fees</div>
+            <h2>The whole price list <em>fits on a receipt.</em></h2>
+            <p class="lead">
+              No monthly charge, no surprise lines at the bottom. Every cost is
+              shown before you confirm.
+            </p>
+          </div>
+          <div class="rcp">
+            <h5>FYNA · FEE RECEIPT</h5>
+            <div class="sb">SAMPLE FEES</div>
+            <div class="r">
+              <span>Deposit by bank transfer</span><b>Free</b>
+            </div>
+            <div class="r"><span>Deposit by card</span><b>2%</b></div>
+            <div class="r"><span>Deposit by Apple Pay</span><b>2%</b></div>
+            <div class="r"><span>Swap currencies</span><b>0.5%</b></div>
+            <div class="r"><span>Send to a Fyna user</span><b>Free</b></div>
+            <div class="r">
+              <span>Receive money from abroad</span><b>No SWIFT fees</b>
+            </div>
+            <div class="tt"><span>Hidden fees</span><span>0.00</span></div>
+            <div class="stamp">NONE</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHO IT'S FOR: four gradient cards. Edit text and colours (--a / --b) here -->
+      <section>
+        <div class="w">
+          <div class="eb">Who it’s for</div>
+          <h2 class="rv">
+            Built for people who <em>live across currencies.</em>
+          </h2>
+          <div class="b6uc">
+            <div class="b6u rv" style="--a: #574bea; --b: #2f2780">
+              <div class="sym">$</div>
+              <h3>Freelancers</h3>
+              <p>
+                Get paid in dollars or pounds, then swap to naira when the rate
+                suits you.
+              </p>
+            </div>
+            <div class="b6u rv" style="--a: #16af5b; --b: #08522b">
+              <div class="sym">£</div>
+              <h3>Students abroad</h3>
+              <p>
+                Receive support in pounds with local account details, then spend
+                without conversion.
+              </p>
+            </div>
+            <div class="b6u rv" style="--a: #e04060; --b: #8a2840">
+              <div class="sym">₦</div>
+              <h3>Families</h3>
+              <p>
+                Send to anyone on the app instantly and free. No bank branch
+                needed.
+              </p>
+            </div>
+            <div class="b6u rv" style="--a: #ef8a2c; --b: #9b4a07">
+              <div class="sym">€</div>
+              <h3>Travellers</h3>
+              <p>
+                Hold the currency of your trip and swap only when you decide to.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ: the questions come from SETTINGS.faqs (js/script.js) -->
+      <section id="faq">
+        <div class="w">
+          <div class="eb">FAQ</div>
+          <h2>Good <em>questions.</em></h2>
+          <div class="fq" id="fq"></div>
+        </div>
+      </section>
+
+      <!-- DOWNLOAD: set real store links in the href of the two store buttons. The QR link is SETTINGS.qrLink -->
+      <section id="get">
+        <div class="w">
+          <div class="cb">
+            <div>
+              <h2>Get<br />Fyna.</h2>
+              <p>
+                Open your multi-currency wallet in minutes. Free to download.
+              </p>
+              <div class="sg">
+                <a class="sb2" href="#get"
+                  ><i>&#63743;</i
+                  ><span>Download on the<b>App Store</b></span></a
+                ><a class="sb2" href="#get"
+                  ><i>▶</i><span>Get it on<b>Google Play</b></span></a
+                >
+              </div>
+              <div class="qr">
+                <div id="qrc"></div>
+                <span>Scan to download<br />(placeholder link)</span>
+              </div>
+            </div>
+            <div class="ph cph">
+              <i class="isl"></i
+              ><img
+                src="assets/img/home.webp"
+                data-i="home"
+                alt="Home screen"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="w">
+        <div class="fg">
+          <div>
+            <a class="logo" href="#top"
+              ><svg viewBox="0 0 30 22">
+                <circle cx="11" cy="11" r="9.5" fill="currentColor" />
+                <circle
+                  cx="19"
+                  cy="11"
+                  r="9.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                /></svg
+              >Fyna</a
+            >
+            <p>
+              The multi-currency wallet for people who earn, spend and save
+              across borders.
+            </p>
+            <form
+              class="nf"
+              onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed ✓'"
+            >
+              <input
+                type="email"
+                placeholder="Your email"
+                aria-label="Email"
+              /><button class="btn">Join</button>
+            </form>
+          </div>
+          <div>
+            <h6>Product</h6>
+            <ul>
+              <li><a href="#how">How it works</a></li>
+              <li><a href="#receive">Get paid</a></li>
+              <li><a href="#exchange">Exchange</a></li>
+              <li><a href="#fees">Fees</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Support</h6>
+            <ul>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#top">Contact</a></li>
+              <li><a href="#top">Security</a></li>
+              <li><a href="#get">Download</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Legal</h6>
+            <ul>
+              <li><a href="#top">Terms</a></li>
+              <li><a href="#top">Privacy Policy</a></li>
+              <li><a href="#top">Licences</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="fb">
+          <span>© 2026 Fyna. All rights reserved.</span
+          ><button id="th">◐ Theme</button>
+        </div>
+        <div class="wm" aria-hidden="true">Fyna</div>
+      </div>
+    </footer>
+    <div class="mb" id="mb">
+      <a class="btn r1 lg" href="#get">Get the app</a>
+    </div>
+    <div class="tst" id="tst">Copied</div>
+
+    <!-- QR code library (loaded from a CDN, needs internet) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <!-- Main script: all behaviour. Settings are at the top of this file -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
